@@ -1,0 +1,136 @@
+{
+ "anio": "2026",
+ "actualizado": "31 de agosto de 2026",
+ "portada": {
+  "titulo": "Catálogo de productos",
+  "bajada": "Tablas de acero inoxidable de fabricación propia.",
+  "foto": "portada.webp"
+ },
+ "productos": [
+  {
+   "id": "tabla-30x40",
+   "codigo": "01",
+   "nombre": "Tabla de acero inoxidable",
+   "tag": "Con plegado para sujetarla a la mesada",
+   "precioLabel": "Precio",
+   "precio": "$41.500",
+   "detalle": "Superficie de corte y apoyo que se integra a la mesada: el plegado frontal la sujeta firme al borde, sin moverse durante el uso.",
+   "specs": [
+    {
+     "k": "Medidas",
+     "v": "30 × 40 cm"
+    },
+    {
+     "k": "Alto del plegado",
+     "v": "25 mm"
+    },
+    {
+     "k": "Material",
+     "v": "Acero inoxidable"
+    }
+   ],
+   "variantes": [],
+   "fotos": [
+    "tabla-30x40.webp",
+    "tabla-30x40-2.webp",
+    "tabla-30x40-3.webp"
+   ],
+   "estado": "disponible"
+  },
+  {
+   "id": "tabla-parrillera",
+   "codigo": "02",
+   "nombre": "Tabla parrillera",
+   "tag": "Tabla grande con plegado para sujetarla a la mesada",
+   "precioLabel": "Precio",
+   "precio": "$51.500",
+   "detalle": "El formato grande ideal para el asado y la cocina diaria: amplia superficie de corte con sujeción firme al borde de la mesada.",
+   "specs": [
+    {
+     "k": "Medidas",
+     "v": "60 × 30 cm"
+    },
+    {
+     "k": "Alto del plegado",
+     "v": "25 mm"
+    },
+    {
+     "k": "Material",
+     "v": "Acero inoxidable"
+    }
+   ],
+   "variantes": [],
+   "fotos": [
+    "tabla-parrillera.webp",
+    "tabla-parrillera-2.webp",
+    "tabla-parrillera-3.webp"
+   ],
+   "estado": "disponible"
+  },
+  {
+   "id": "set-tablas",
+   "codigo": "03",
+   "nombre": "Set de tablas",
+   "tag": "Para carne, vegetales y pan, con soporte apilable grabado a láser",
+   "precioLabel": "Desde",
+   "precio": "$67.500",
+   "detalle": "Tres tablas y un soporte que las mantiene separadas, ventiladas y a mano. Disponible en dos medidas.",
+   "specs": [
+    {
+     "k": "Material",
+     "v": "Acero inoxidable"
+    }
+   ],
+   "variantes": [
+    {
+     "k": "XL",
+     "v": "38 × 28 cm",
+     "p": "$72.500"
+    },
+    {
+     "k": "L",
+     "v": "35 × 25,8 cm",
+     "p": "$67.500"
+    }
+   ],
+   "fotos": [
+    "set-tablas.webp",
+    "set-tablas-2.webp",
+    "set-tablas-3.webp",
+    "set-tablas-4.webp"
+   ],
+   "estado": "disponible"
+  }
+ ],
+ "cierre": {
+  "titulo": "Diseños personalizados",
+  "texto": "¿Tenés en mente algún diseño? Nosotros lo hacemos realidad. Fabricamos un diseño creado por vos o desarrollamos uno completamente desde cero, según tus necesidades.",
+  "foto": "taller.webp",
+  "filas": [
+   {
+    "k": "WhatsApp",
+    "v": "+54 387 685-7057 · +54 387 453-6373"
+   },
+   {
+    "k": "Instagram",
+    "v": "@makon.emp"
+   },
+   {
+    "k": "TikTok",
+    "v": "@makon.emp"
+   }
+  ],
+  "qrTitulo": "Consultá por WhatsApp",
+  "qrTexto": "Escaneá el código con la cámara del celular y escribinos directo. Contanos tu proyecto y te asesoramos sin compromiso.",
+  "qrs": [
+   {
+    "img": "qr-1.png",
+    "cap": "+54 387 685-7057"
+   },
+   {
+    "img": "qr-2.png",
+    "cap": "+54 387 453-6373"
+   }
+  ]
+ }
+}

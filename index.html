@@ -1,0 +1,976 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Catálogo MAKÖN</title>
+<meta name="description" content="Catálogo de productos MAKÖN: tablas de acero inoxidable de fabricación propia. Medidas, precios y disponibilidad actualizados.">
+<meta name="theme-color" content="#111314">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MAKÖN">
+<meta property="og:title" content="Catálogo MAKÖN">
+<meta property="og:description" content="Catálogo de productos MAKÖN: tablas de acero inoxidable de fabricación propia. Medidas, precios y disponibilidad actualizados.">
+<meta property="og:image" content="https://makonemp-sys.github.io/portada.webp">
+<meta property="og:url" content="https://makonemp-sys.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="-14 -14 214 241"><polygon points="0,0 28,27 28,187 0,187" fill="%23696969"/><rect x="76" y="58" width="31" height="129" fill="%23C06A33"/><polygon points="158,27 186,0 186,187 158,187" fill="%23696969"/><rect x="0" y="200" width="186" height="13" fill="%23C06A33"/></svg>'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Archivo+Narrow:wght@500;600;700&display=swap">
+<style>
+/* ---------- reset ---------- */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0}
+img{max-width:100%;display:block}
+button,input,textarea,select{font:inherit;color:inherit}
+[hidden]{display:none!important}
+:where(h1,h2,h3,h4,p,figure,ul,ol){margin:0}
+ul,ol{padding:0;list-style:none}
+
+/* ---------- tokens: light ---------- */
+:root{
+  color-scheme:light;
+  --copper:#B05E2B;
+  --copper-ink:#8E4A20;
+  --copper-soft:rgba(192,106,51,.10);
+  --ink:#15181A;
+  --ink-2:#3C4145;
+  --steel:#6C7276;
+  --ground:#F7F7F6;
+  --panel:#FFFFFF;
+  --sunk:#EDEEEE;
+  --line:#DEE0E0;
+  --line-soft:#E9EAEA;
+  --ok:#3F7A52;
+  --warn:#9A6218;
+  --shadow:0 1px 2px rgba(21,24,26,.05),0 12px 32px -18px rgba(21,24,26,.28);
+  --maxw:1120px;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --copper:#D5834A;
+    --copper-ink:#E39A66;
+    --copper-soft:rgba(213,131,74,.13);
+    --ink:#E9EBEB;
+    --ink-2:#B4BABD;
+    --steel:#8A9296;
+    --ground:#0F1213;
+    --panel:#161A1C;
+    --sunk:#1D2224;
+    --line:#2A3033;
+    --line-soft:#232829;
+    --ok:#69AC80;
+    --warn:#C79246;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 14px 34px -18px rgba(0,0,0,.75);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --copper:#D5834A;
+  --copper-ink:#E39A66;
+  --copper-soft:rgba(213,131,74,.13);
+  --ink:#E9EBEB;
+  --ink-2:#B4BABD;
+  --steel:#8A9296;
+  --ground:#0F1213;
+  --panel:#161A1C;
+  --sunk:#1D2224;
+  --line:#2A3033;
+  --line-soft:#232829;
+  --ok:#69AC80;
+  --warn:#C79246;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 14px 34px -18px rgba(0,0,0,.75);
+}
+
+body{
+  background:var(--ground);
+  color:var(--ink);
+  font-family:"Archivo",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size:16px;line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+:focus-visible{outline:2px solid var(--copper);outline-offset:2px;border-radius:2px}
+
+/* ---------- shared bits ---------- */
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+.label{
+  font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--steel);
+}
+.num{font-variant-numeric:tabular-nums}
+.narrow{font-family:"Archivo Narrow","Archivo",sans-serif}
+.rule{height:1px;background:var(--line);border:0}
+
+/* ---------- brand mark ---------- */
+.mark{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+.mark svg{height:26px;width:auto;display:block}
+.mark .word{
+  font-family:"Archivo Narrow","Archivo",sans-serif;font-weight:700;
+  font-size:23px;letter-spacing:.055em;color:var(--ink);line-height:1;
+}
+
+/* ---------- top bar ---------- */
+.top{
+  position:sticky;top:0;z-index:40;
+  background:color-mix(in srgb,var(--ground) 88%,transparent);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line-soft);
+}
+.top-in{max-width:var(--maxw);margin:0 auto;padding:14px 28px;
+  display:flex;align-items:center;justify-content:space-between;gap:20px}
+.top-meta{display:flex;align-items:center;gap:16px}
+.stamp{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--steel)}
+
+/* ---------- cover ---------- */
+.cover{position:relative;margin:0 auto;max-width:var(--maxw);padding:0 28px}
+.cover-in{
+  position:relative;overflow:hidden;border-radius:3px;
+  background:#0F1213;min-height:min(74vh,620px);display:flex;align-items:flex-end;
+}
+.cover-in img{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  opacity:.62;filter:saturate(.72) contrast(1.06);
+}
+.cover-grad{position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(15,18,19,.55) 0%,rgba(15,18,19,.25) 38%,rgba(15,18,19,.92) 100%)}
+.cover-txt{position:relative;padding:clamp(28px,5vw,56px);color:#F2F3F3;max-width:44ch}
+.cover-year{font-family:"Archivo Narrow","Archivo",sans-serif;font-weight:600;
+  font-size:12px;letter-spacing:.42em;color:#D5834A;margin-bottom:18px}
+.cover-h{
+  font-family:"Archivo Narrow","Archivo",sans-serif;font-weight:700;
+  font-size:clamp(38px,7vw,72px);line-height:.95;letter-spacing:-.012em;
+  text-wrap:balance;text-transform:uppercase;
+}
+.cover-sub{margin-top:16px;font-size:clamp(15px,1.6vw,18px);color:#CBCFD1;max-width:38ch}
+
+/* ---------- product spread ---------- */
+.sheet{padding:clamp(56px,8vw,104px) 0 0}
+.spread{
+  display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);
+  gap:clamp(28px,4vw,56px);align-items:start;
+}
+.spread.flip .gallery{order:2}
+.spread.flip .info{order:1}
+@media(max-width:860px){.spread{grid-template-columns:1fr}
+  .spread.flip .gallery,.spread.flip .info{order:initial}}
+
+.gallery{display:grid;gap:10px;grid-template-columns:1fr 1fr}
+.shot{
+  position:relative;overflow:hidden;border-radius:2px;background:var(--sunk);
+  border:1px solid var(--line-soft);aspect-ratio:4/3;
+}
+.shot:first-child{grid-column:1/-1;aspect-ratio:16/11}
+.shot img{width:100%;height:100%;object-fit:cover}
+.shot.only{grid-column:1/-1}
+.shot:last-child:nth-child(even){grid-column:1/-1;aspect-ratio:16/11}
+
+.info{padding-top:4px;position:sticky;top:88px}
+@media(max-width:860px){.info{position:static}}
+.eyebrow{display:flex;align-items:baseline;gap:14px;margin-bottom:14px}
+.eyebrow .idx{
+  font-family:"Archivo Narrow","Archivo",sans-serif;font-weight:700;font-size:13px;
+  letter-spacing:.16em;color:var(--copper);
+}
+.prod-h{
+  font-family:"Archivo Narrow","Archivo",sans-serif;font-weight:700;
+  font-size:clamp(27px,3.4vw,40px);line-height:1.03;letter-spacing:-.005em;
+  text-transform:uppercase;text-wrap:balance;
+}
+.prod-tag{margin-top:10px;color:var(--ink-2);font-size:15.5px;max-width:46ch}
+.price{
+  font-family:"Archivo Narrow","Archivo",sans-serif;font-weight:700;
+  font-size:clamp(30px,4vw,44px);line-height:1;color:var(--copper);
+  margin-top:22px;font-variant-numeric:tabular-nums;letter-spacing:-.01em;
+}
+.price small{font-size:.44em;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--steel);display:block;margin-bottom:6px}
+.detalle{margin-top:20px;color:var(--ink-2);font-size:15.5px;max-width:52ch}
+
+.specs{margin-top:26px;border-top:1px solid var(--line)}
+.spec{display:grid;grid-template-columns:minmax(90px,.42fr) 1fr;gap:16px;
+  padding:11px 0;border-bottom:1px solid var(--line-soft);align-items:baseline}
+.spec .v{font-weight:600;font-size:14.5px;font-variant-numeric:tabular-nums}
+.spec .v.money{color:var(--copper);font-family:"Archivo Narrow","Archivo",sans-serif;font-size:16px}
+.spec.var{grid-template-columns:minmax(52px,.2fr) 1fr auto}
+body.editing .spec{grid-template-columns:minmax(90px,.42fr) 1fr auto}
+body.editing .spec.var{grid-template-columns:minmax(52px,.2fr) 1fr auto auto}
+.spec .btn.tiny{align-self:center;justify-self:end}
+
+.badge{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:11px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;
+  padding:4px 9px;border-radius:2px;border:1px solid currentColor;
+}
+.badge.agotado{color:var(--warn)}
+.badge.pedido{color:var(--steel)}
+.dot{width:5px;height:5px;border-radius:50%;background:currentColor}
+.prod.off .gallery{opacity:.5}
+
+/* ---------- closing ---------- */
+.closing{margin-top:clamp(64px,9vw,120px)}
+.close-in{position:relative;overflow:hidden;border-radius:3px;background:#0F1213;color:#EDEEEE}
+.close-in>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.3}
+.close-grad{position:absolute;inset:0;background:linear-gradient(105deg,rgba(15,18,19,.96) 42%,rgba(15,18,19,.55) 100%)}
+.close-body{position:relative;padding:clamp(30px,5vw,60px);
+  display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(26px,4vw,52px)}
+@media(max-width:800px){.close-body{grid-template-columns:1fr}}
+.close-h{font-family:"Archivo Narrow","Archivo",sans-serif;font-weight:700;
+  font-size:clamp(28px,4vw,44px);line-height:1;text-transform:uppercase;text-wrap:balance}
+.close-p{margin-top:16px;color:#BFC4C6;max-width:46ch;font-size:15.5px}
+.qr-row{display:flex;gap:18px;flex-wrap:wrap;margin-top:8px}
+.qr{background:#fff;padding:9px;border-radius:2px;width:118px}
+.qr img{width:100%;image-rendering:pixelated}
+.qr-cap{font-size:12px;color:#BFC4C6;margin-top:7px;text-align:center;font-variant-numeric:tabular-nums}
+.contact{border-top:1px solid rgba(255,255,255,.16);padding-top:16px;margin-top:22px;
+  display:grid;gap:12px}
+.contact .row{display:grid;grid-template-columns:minmax(84px,.34fr) 1fr;gap:14px;align-items:baseline}
+.contact .row .k{font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#8A9296}
+.contact .row .v{font-weight:600;font-variant-numeric:tabular-nums}
+
+/* ---------- footer ---------- */
+.foot{padding:52px 0 40px;margin-top:56px;border-top:1px solid var(--line-soft)}
+.foot-in{max-width:var(--maxw);margin:0 auto;padding:0 28px;
+  display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.foot-note{font-size:12.5px;color:var(--steel)}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:7px;cursor:pointer;
+  font-size:13px;font-weight:600;letter-spacing:.02em;
+  padding:8px 14px;border-radius:2px;
+  border:1px solid var(--line);background:var(--panel);color:var(--ink);
+  transition:border-color .15s,background .15s,color .15s;
+}
+.btn:hover{border-color:var(--steel)}
+.btn.primary{background:var(--copper);border-color:var(--copper);color:#fff}
+.btn.primary:hover{background:var(--copper-ink);border-color:var(--copper-ink)}
+.btn.ghost{background:transparent}
+.btn.tiny{font-size:12px;padding:5px 9px;gap:5px}
+.btn[disabled]{opacity:.5;cursor:not-allowed}
+.btn.danger:hover{border-color:#B4432F;color:#B4432F}
+
+/* ---------- edit chrome ---------- */
+body.editing [contenteditable="true"]{
+  outline:1px dashed var(--line);outline-offset:3px;border-radius:2px;
+  transition:outline-color .15s,background .15s;
+}
+body.editing [contenteditable="true"]:hover{outline-color:var(--steel)}
+body.editing [contenteditable="true"]:focus{
+  outline:2px solid var(--copper);outline-offset:3px;background:var(--copper-soft);
+}
+[contenteditable="true"]:empty::before{content:attr(data-ph);color:var(--steel);opacity:.75}
+
+.edit-only{display:none}
+body.editing .edit-only{display:flex}
+body.editing .prod{position:relative;padding-top:52px;border-top:1px solid var(--line);margin-top:26px}
+.prod-tools{
+  position:absolute;top:8px;left:0;right:0;
+  gap:6px;flex-wrap:wrap;align-items:center;
+}
+.tools-sp{flex:1}
+
+.dock{
+  position:fixed;left:0;right:0;bottom:0;z-index:60;
+  background:color-mix(in srgb,var(--panel) 94%,transparent);
+  backdrop-filter:blur(12px);
+  border-top:1px solid var(--line);
+  box-shadow:0 -8px 30px -22px rgba(0,0,0,.5);
+}
+.dock-in{max-width:var(--maxw);margin:0 auto;padding:11px 28px;
+  display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.dock-sp{flex:1}
+.status{font-size:12.5px;color:var(--steel);display:flex;align-items:center;gap:7px}
+.status.ok{color:var(--ok)}
+.status.err{color:#B4432F}
+body.editing{padding-bottom:76px}
+
+.addbar{display:none;justify-content:center;padding:34px 0 0}
+body.editing .addbar{display:flex}
+
+.shot-tools{position:absolute;top:6px;right:6px;gap:5px;z-index:2}
+.shot-tools .btn{background:color-mix(in srgb,var(--panel) 88%,transparent);backdrop-filter:blur(6px)}
+.gallery-add{
+  border:1px dashed var(--line);border-radius:2px;display:none;
+  align-items:center;justify-content:center;height:104px;align-self:start;
+  cursor:pointer;color:var(--steel);font-size:13px;font-weight:600;background:transparent;
+}
+.gallery-add:hover{border-color:var(--copper);color:var(--copper)}
+body.editing .gallery-add{display:flex}
+
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:2px;overflow:hidden}
+.seg button{border:0;background:var(--panel);color:var(--steel);cursor:pointer;
+  font-size:12px;font-weight:600;padding:5px 10px;border-right:1px solid var(--line)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--copper);color:#fff}
+
+.notice{
+  max-width:var(--maxw);margin:16px auto 0;padding:12px 18px;
+  border:1px solid var(--line);border-left:3px solid var(--copper);
+  background:var(--panel);border-radius:2px;font-size:13.5px;color:var(--ink-2);
+}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}
+}
+
+
+/* ---------- modal ---------- */
+.modal-wrap{position:fixed;inset:0;z-index:80;background:rgba(15,18,19,.55);
+  display:flex;align-items:center;justify-content:center;padding:20px}
+.modal{background:var(--panel);border:1px solid var(--line);border-radius:3px;
+  box-shadow:var(--shadow);width:min(470px,100%);padding:26px;max-height:88vh;overflow:auto}
+.modal-h{font-family:"Archivo Narrow","Archivo",sans-serif;font-weight:700;font-size:22px;
+  text-transform:uppercase;letter-spacing:-.005em}
+.modal-p{font-size:13.5px;color:var(--ink-2);margin-top:8px;max-width:44ch}
+.modal-p a{color:var(--copper);text-underline-offset:2px}
+.fld{display:block;margin-top:15px}
+.fld span{display:block;font-size:11px;font-weight:600;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--steel);margin-bottom:5px}
+.fld input{width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:2px;
+  background:var(--ground);color:var(--ink);font-size:14px}
+.fld input:focus{outline:2px solid var(--copper);outline-offset:1px}
+.modal-msg{font-size:13px;margin-top:15px;min-height:19px;color:var(--ink-2)}
+.modal-msg.ok{color:var(--ok)}
+.modal-msg.err{color:#B4432F}
+.modal-acts{display:flex;gap:8px;margin-top:18px;align-items:center;flex-wrap:wrap}
+
+/* ---------- print / PDF ---------- */
+@media print{
+  @page{size:A4;margin:12mm}
+  body{background:#fff;color:#15181A;font-size:11.5pt;padding:0}
+  .top,.dock,.addbar,.edit-only,.foot,.notice,.shot-tools,.gallery-add,.modal-wrap{display:none!important}
+  .wrap,.cover,.top-in,.close-body{padding-left:0;padding-right:0}
+  .cover-in{min-height:150mm;break-after:page}
+  .sheet{padding:0}
+  .info{position:static!important}
+  .prod{break-inside:avoid;break-after:page;padding-top:0!important;border-top:0!important;margin-top:0!important}
+  .prod:last-of-type{break-after:auto}
+  .spread{grid-template-columns:1fr 1fr;gap:9mm;align-items:start}
+  .spread.flip .gallery,.spread.flip .info{order:initial}
+  .gallery{gap:3mm;min-width:0}
+  .spread>*{min-width:0}
+  .shot,.shot:first-child,.shot.only,.shot:last-child:nth-child(even){aspect-ratio:auto;width:100%;min-width:0}
+  .shot{height:47mm}
+  .shot:first-child{height:90mm}
+  .shot.only{height:90mm}
+  .shot:last-child:nth-child(even){height:54mm}
+  .prod-h{font-size:24pt}
+  .prod-tag{font-size:10.5pt;margin-top:3mm}
+  .price{font-size:29pt;margin-top:7mm}
+  .detalle{font-size:10.5pt;margin-top:5mm}
+  .specs{margin-top:5mm}
+  .spec{padding:3mm 0}
+  .close-h{font-size:24pt}
+  .qr{width:30mm}
+  .closing{margin-top:0;break-before:page}
+  .close-in,.cover-in{print-color-adjust:exact;-webkit-print-color-adjust:exact}
+  .price,.eyebrow .idx,.spec .v.money{color:#B05E2B!important}
+}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+(function () {
+  "use strict";
+
+  var MARK_SVG =
+    '<svg viewBox="0 0 186 213" aria-hidden="true" focusable="false">' +
+    '<polygon points="0,0 28,27 28,187 0,187" fill="#696969"/>' +
+    '<rect x="76" y="58" width="31" height="129" fill="#C06A33"/>' +
+    '<polygon points="158,27 186,0 186,187 158,187" fill="#696969"/>' +
+    '<rect x="0" y="200" width="186" height="13" fill="#C06A33"/>' +
+    "</svg>";
+
+  var LS_KEY = "makon.github";
+  var S = null;
+  var app = document.getElementById("app");
+  var editing = false;
+  var dirty = false;
+  var photoTarget = null;
+
+  /* ---------------- utils ---------------- */
+
+  function h(v) {
+    return String(v == null ? "" : v)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  }
+  function get(path) {
+    var parts = path.split("."), o = S;
+    for (var i = 0; i < parts.length; i++) { if (o == null) return ""; o = o[parts[i]]; }
+    return o == null ? "" : o;
+  }
+  function set(path, val) {
+    var parts = path.split("."), o = S;
+    for (var i = 0; i < parts.length - 1; i++) o = o[parts[i]];
+    o[parts[parts.length - 1]] = val;
+  }
+  function uid() {
+    return Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+  }
+  function hoy() {
+    var d = new Date();
+    var m = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+    return d.getDate() + " de " + m[d.getMonth()] + " de " + d.getFullYear();
+  }
+  function slug(t) {
+    return String(t).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "")
+      .replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 28) || "foto";
+  }
+  function ed(path, cls, ph, tag) {
+    tag = tag || "div";
+    return "<" + tag + ' class="' + cls + '" data-bind="' + h(path) + '" data-ph="' + h(ph || "") + '"' +
+      (editing ? ' contenteditable="true" spellcheck="false"' : "") + ">" + h(get(path)) + "</" + tag + ">";
+  }
+
+  /* ---------------- github config ---------------- */
+
+  function cfgDefaults() {
+    var host = location.hostname || "";
+    var owner = "", repo = "";
+    var m = host.match(/^([\w-]+)\.github\.io$/i);
+    if (m) {
+      owner = m[1];
+      var seg = location.pathname.split("/").filter(Boolean);
+      repo = seg.length ? seg[0] : host;
+    }
+    return { owner: owner, repo: repo, branch: "main", token: "" };
+  }
+  function cfgGet() {
+    var d = cfgDefaults();
+    try {
+      var raw = localStorage.getItem(LS_KEY);
+      if (raw) {
+        var o = JSON.parse(raw);
+        return {
+          owner: o.owner || d.owner, repo: o.repo || d.repo,
+          branch: o.branch || d.branch, token: o.token || ""
+        };
+      }
+    } catch (e) {}
+    return d;
+  }
+  function cfgSave(c) {
+    try { localStorage.setItem(LS_KEY, JSON.stringify(c)); return true; }
+    catch (e) { return false; }
+  }
+  function conectado() { var c = cfgGet(); return !!(c.token && c.owner && c.repo); }
+
+  /* ---------------- render ---------------- */
+
+  function render() {
+    var html = "";
+
+    html += '<header class="top"><div class="top-in">' +
+      '<div class="mark">' + MARK_SVG + '<span class="word">MAKÖN</span></div>' +
+      '<div class="top-meta"><span class="stamp">Catálogo ' + h(S.anio) + "</span>" +
+      '<button class="btn ghost" data-act="print">Imprimir / PDF</button>' +
+      "</div></div></header>";
+
+    html += '<section class="cover"><div class="cover-in">' +
+      (S.portada.foto ? '<img src="' + h(S.portada.foto) + '" alt="">' : "") +
+      '<div class="cover-grad"></div><div class="cover-txt">' +
+      '<div class="cover-year" data-bind="anio"' + (editing ? ' contenteditable="true"' : "") + ">" + h(S.anio) + "</div>" +
+      ed("portada.titulo", "cover-h", "Título de tapa", "h1") +
+      ed("portada.bajada", "cover-sub", "Bajada", "p") +
+      "</div></div></section>";
+
+    html += '<main class="wrap sheet">';
+    for (var i = 0; i < S.productos.length; i++) html += producto(S.productos[i], i);
+    html += '<div class="addbar"><button class="btn primary" data-act="add-prod">+ Agregar producto</button></div></main>';
+
+    html += cierre();
+
+    html += '<footer class="foot"><div class="foot-in">' +
+      '<span class="foot-note">Actualizado el <span data-stamp>' + h(S.actualizado) + "</span></span>" +
+      '<span id="edit-entry"><button class="btn ghost" data-act="edit-on">Editar catálogo</button></span>' +
+      "</div></footer>";
+
+    app.innerHTML = html;
+    paintEditEntry();
+  }
+
+  function producto(p, i) {
+    var flip = i % 2 === 1;
+    var s = '<article class="prod' + (p.estado === "agotado" ? " off" : "") + '" data-i="' + i + '">';
+
+    s += '<div class="prod-tools edit-only">' +
+      '<button class="btn tiny" data-act="up" data-i="' + i + '" aria-label="Subir producto">↑</button>' +
+      '<button class="btn tiny" data-act="down" data-i="' + i + '" aria-label="Bajar producto">↓</button>' +
+      '<span class="seg" role="group" aria-label="Disponibilidad">' +
+      segBtn(i, "disponible", "Disponible", p.estado) +
+      segBtn(i, "pedido", "A pedido", p.estado) +
+      segBtn(i, "agotado", "Sin stock", p.estado) +
+      '</span><span class="tools-sp"></span>' +
+      '<button class="btn tiny" data-act="dup" data-i="' + i + '">Duplicar</button>' +
+      '<button class="btn tiny danger" data-act="del" data-i="' + i + '">Eliminar</button></div>';
+
+    s += '<div class="spread' + (flip ? " flip" : "") + '"><div class="gallery">';
+    if (!p.fotos.length && !editing) s += '<div class="shot only"></div>';
+    for (var f = 0; f < p.fotos.length; f++) {
+      s += '<figure class="shot' + (p.fotos.length === 1 ? " only" : "") + '">' +
+        '<img src="' + h(p.fotos[f]) + '" alt="' + h(p.nombre) + '"' + (f > 1 ? ' loading="lazy"' : "") + ">" +
+        '<div class="shot-tools edit-only">' +
+        (f > 0 ? '<button class="btn tiny" data-act="foto-main" data-i="' + i + '" data-f="' + f + '">Principal</button>' : "") +
+        '<button class="btn tiny danger" data-act="foto-del" data-i="' + i + '" data-f="' + f + '" aria-label="Quitar foto">✕</button>' +
+        "</div></figure>";
+    }
+    s += '<button class="gallery-add" data-act="foto-add" data-i="' + i + '">+ Foto</button></div>';
+
+    s += '<div class="info"><div class="eyebrow"><span class="idx" data-bind="productos.' + i + '.codigo"' +
+      (editing ? ' contenteditable="true"' : "") + ">" + h(p.codigo) + "</span>";
+    if (p.estado === "agotado") s += '<span class="badge agotado"><span class="dot"></span>Sin stock</span>';
+    if (p.estado === "pedido") s += '<span class="badge pedido"><span class="dot"></span>A pedido</span>';
+    s += "</div>";
+
+    s += ed("productos." + i + ".nombre", "prod-h", "Nombre del producto", "h2");
+    s += ed("productos." + i + ".tag", "prod-tag", "Descripción corta", "p");
+    s += '<div class="price"><small data-bind="productos.' + i + '.precioLabel"' + (editing ? ' contenteditable="true"' : "") + ">" + h(p.precioLabel) + "</small>" +
+      '<span data-bind="productos.' + i + '.precio"' + (editing ? ' contenteditable="true"' : "") + ">" + h(p.precio) + "</span></div>";
+    s += ed("productos." + i + ".detalle", "detalle", "Detalle", "p");
+
+    s += '<div class="specs">';
+    for (var v = 0; v < p.variantes.length; v++) {
+      s += '<div class="spec var">' +
+        campo("productos." + i + ".variantes." + v + ".k", "label", p.variantes[v].k) +
+        campo("productos." + i + ".variantes." + v + ".v", "v", p.variantes[v].v) +
+        campo("productos." + i + ".variantes." + v + ".p", "v money", p.variantes[v].p) +
+        (editing ? '<button class="btn tiny danger edit-only" data-act="var-del" data-i="' + i + '" data-v="' + v + '" aria-label="Quitar medida">✕</button>' : "") +
+        "</div>";
+    }
+    for (var k = 0; k < p.specs.length; k++) {
+      s += '<div class="spec">' +
+        campo("productos." + i + ".specs." + k + ".k", "label", p.specs[k].k) +
+        campo("productos." + i + ".specs." + k + ".v", "v", p.specs[k].v) +
+        (editing ? '<button class="btn tiny danger edit-only" data-act="spec-del" data-i="' + i + '" data-k="' + k + '" aria-label="Quitar dato">✕</button>' : "") +
+        "</div>";
+    }
+    s += "</div>";
+
+    s += '<div class="edit-only" style="gap:8px;margin-top:14px">' +
+      '<button class="btn tiny" data-act="var-add" data-i="' + i + '">+ Medida</button>' +
+      '<button class="btn tiny" data-act="spec-add" data-i="' + i + '">+ Dato</button></div>';
+
+    return s + "</div></div></article>";
+  }
+
+  function campo(path, cls, val) {
+    return '<span class="' + cls + '" data-bind="' + path + '"' +
+      (editing ? ' contenteditable="true"' : "") + ">" + h(val) + "</span>";
+  }
+  function segBtn(i, val, txt, cur) {
+    return '<button data-act="estado" data-i="' + i + '" data-v="' + val + '" aria-pressed="' +
+      (cur === val ? "true" : "false") + '">' + txt + "</button>";
+  }
+
+  function cierre() {
+    var c = S.cierre;
+    var s = '<section class="wrap closing"><div class="close-in">';
+    if (c.foto) s += '<img src="' + h(c.foto) + '" alt="" loading="lazy">';
+    s += '<div class="close-grad"></div><div class="close-body"><div>';
+    s += ed("cierre.titulo", "close-h", "Título", "h2");
+    s += ed("cierre.texto", "close-p", "Texto", "p");
+    s += '<div class="contact">';
+    for (var i = 0; i < c.filas.length; i++) {
+      s += '<div class="row">' + campo("cierre.filas." + i + ".k", "k", c.filas[i].k) +
+        campo("cierre.filas." + i + ".v", "v", c.filas[i].v) + "</div>";
+    }
+    s += "</div></div><div>";
+    s += ed("cierre.qrTitulo", "label", "Título QR", "div");
+    s += '<div style="margin-top:12px" class="close-p">' + h(c.qrTexto) + "</div>";
+    s += '<div class="qr-row">';
+    for (var q = 0; q < c.qrs.length; q++) {
+      s += '<div><div class="qr"><img src="' + h(c.qrs[q].img) + '" alt="QR ' + h(c.qrs[q].cap) + '"></div>' +
+        campo("cierre.qrs." + q + ".cap", "qr-cap", c.qrs[q].cap) + "</div>";
+    }
+    return s + "</div></div></div></div></section>";
+  }
+
+  function paintEditEntry() {
+    var slot = document.getElementById("edit-entry");
+    if (!slot) return;
+    slot.innerHTML = editing ? '<span class="foot-note">Modo edición activo</span>'
+      : '<button class="btn ghost" data-act="edit-on">Editar catálogo</button>';
+  }
+
+  /* ---------------- dock ---------------- */
+
+  function dock() {
+    var d = document.getElementById("dock");
+    if (!editing) { if (d) d.remove(); document.body.classList.remove("editing"); return; }
+    document.body.classList.add("editing");
+    if (!d) { d = document.createElement("div"); d.id = "dock"; d.className = "dock"; document.body.appendChild(d); }
+    d.innerHTML = '<div class="dock-in"><strong style="font-size:13.5px">Editando</strong>' +
+      '<span class="status" id="status">' + (dirty ? "Cambios sin publicar" : "Sin cambios") + "</span>" +
+      '<span class="dock-sp"></span>' +
+      '<button class="btn ghost" data-act="config">' + (conectado() ? "GitHub ✓" : "Conectar GitHub") + "</button>" +
+      '<button class="btn ghost" data-act="edit-off">Salir</button>' +
+      '<button class="btn primary" data-act="publicar">Publicar</button></div>';
+  }
+  function status(txt, kind) {
+    var el = document.getElementById("status");
+    if (el) { el.textContent = txt; el.className = "status" + (kind ? " " + kind : ""); }
+  }
+  function touch() { dirty = true; status("Cambios sin publicar"); }
+
+  /* ---------------- modal ---------------- */
+
+  function modal(inner) {
+    cerrarModal();
+    var w = document.createElement("div");
+    w.id = "modal";
+    w.className = "modal-wrap";
+    w.innerHTML = '<div class="modal" role="dialog" aria-modal="true">' + inner + "</div>";
+    document.body.appendChild(w);
+    w.addEventListener("click", function (e) { if (e.target === w) cerrarModal(); });
+    return w;
+  }
+  function cerrarModal() { var m = document.getElementById("modal"); if (m) m.remove(); }
+
+  function panelConfig() {
+    var c = cfgGet();
+    modal(
+      '<h3 class="modal-h">Conectar con GitHub</h3>' +
+      '<p class="modal-p">Se guarda solo en este navegador. Sirve para publicar los cambios al sitio; ' +
+      'quien mira el catálogo no necesita nada de esto.</p>' +
+      '<label class="fld"><span>Usuario u organización</span><input id="gh-owner" value="' + h(c.owner) + '" placeholder="makon-emp" autocomplete="off"></label>' +
+      '<label class="fld"><span>Repositorio</span><input id="gh-repo" value="' + h(c.repo) + '" placeholder="makon-emp.github.io" autocomplete="off"></label>' +
+      '<label class="fld"><span>Rama</span><input id="gh-branch" value="' + h(c.branch) + '" autocomplete="off"></label>' +
+      '<label class="fld"><span>Token de acceso</span><input id="gh-token" type="password" value="' + h(c.token) + '" placeholder="github_pat_..." autocomplete="off"></label>' +
+      '<p class="modal-p" style="margin-top:9px">Se genera en ' +
+      '<a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub → Tokens</a>, ' +
+      'dando acceso solo a este repositorio con permiso <em>Contents: Read and write</em>.</p>' +
+      '<div class="modal-msg" id="gh-msg"></div>' +
+      '<div class="modal-acts">' +
+      '<button class="btn ghost" data-act="bajar-datos">Descargar datos.json</button>' +
+      '<span class="dock-sp"></span>' +
+      '<button class="btn ghost" data-act="modal-close">Cancelar</button>' +
+      '<button class="btn primary" data-act="gh-probar">Guardar y probar</button>' +
+      "</div>"
+    );
+  }
+
+  function leerCampos() {
+    return {
+      owner: (document.getElementById("gh-owner").value || "").trim(),
+      repo: (document.getElementById("gh-repo").value || "").trim(),
+      branch: (document.getElementById("gh-branch").value || "main").trim(),
+      token: (document.getElementById("gh-token").value || "").trim()
+    };
+  }
+  function msg(txt, kind) {
+    var el = document.getElementById("gh-msg");
+    if (el) { el.textContent = txt; el.className = "modal-msg" + (kind ? " " + kind : ""); }
+  }
+
+  /* ---------------- github api ---------------- */
+
+  function api(path, opts) {
+    var c = cfgGet();
+    opts = opts || {};
+    opts.headers = Object.assign({
+      "Accept": "application/vnd.github+json",
+      "Authorization": "Bearer " + c.token,
+      "X-GitHub-Api-Version": "2022-11-28"
+    }, opts.headers || {});
+    return fetch("https://api.github.com" + path, opts);
+  }
+
+  function b64(str) {
+    return btoa(String.fromCharCode.apply(null, new TextEncoder().encode(str)));
+  }
+
+  function putFile(path, contentB64, mensaje, sha) {
+    var c = cfgGet();
+    var body = { message: mensaje, content: contentB64, branch: c.branch };
+    if (sha) body.sha = sha;
+    return api("/repos/" + c.owner + "/" + c.repo + "/contents/" + path, {
+      method: "PUT", body: JSON.stringify(body)
+    }).then(function (r) {
+      if (r.ok) return r.json();
+      return r.json().catch(function () { return {}; }).then(function (j) {
+        var e = new Error(j.message || ("HTTP " + r.status)); e.status = r.status; throw e;
+      });
+    });
+  }
+
+  function getSha(path) {
+    var c = cfgGet();
+    return api("/repos/" + c.owner + "/" + c.repo + "/contents/" + path + "?ref=" + encodeURIComponent(c.branch))
+      .then(function (r) { return r.ok ? r.json().then(function (j) { return j.sha; }) : null; })
+      .catch(function () { return null; });
+  }
+
+  function explicar(err) {
+    if (err && err.status === 401) return "El token no es válido o venció. Generá uno nuevo y pegalo de nuevo.";
+    if (err && err.status === 403) return "El token no tiene permiso de escritura sobre el repositorio.";
+    if (err && err.status === 404) return "No se encontró el repositorio, o el token no tiene acceso. Revisá usuario y nombre del repo.";
+    if (err && err.status === 409) return "El repositorio está vacío o la rama no existe. Subí primero los archivos.";
+    if (err && (err.message || "").indexOf("Failed to fetch") >= 0) return "Sin conexión a GitHub. Revisá internet y probá de nuevo.";
+    return (err && err.message) ? err.message : "Error inesperado.";
+  }
+
+  function probarConexion() {
+    var c = leerCampos();
+    if (!c.owner || !c.repo || !c.token) { msg("Completá usuario, repositorio y token.", "err"); return; }
+    cfgSave(c);
+    msg("Probando…");
+    api("/repos/" + c.owner + "/" + c.repo)
+      .then(function (r) {
+        if (!r.ok) { var e = new Error("HTTP " + r.status); e.status = r.status; throw e; }
+        return r.json();
+      })
+      .then(function (j) {
+        if (j.permissions && j.permissions.push === false) {
+          msg("Conecta, pero el token es de solo lectura. Necesita permiso de escritura en Contents.", "err");
+          return;
+        }
+        msg("Listo, conectado a " + j.full_name + ".", "ok");
+        dock();
+        setTimeout(cerrarModal, 1100);
+      })
+      .catch(function (e) { msg(explicar(e), "err"); });
+  }
+
+  /* ---------------- publicar ---------------- */
+
+  function publicar() {
+    if (!conectado()) { panelConfig(); msg("Primero conectá GitHub para poder publicar.", ""); return; }
+    var btn = document.querySelector('[data-act="publicar"]');
+    if (btn) btn.disabled = true;
+
+    var pendientes = [];
+    S.productos.forEach(function (p, pi) {
+      p.fotos.forEach(function (f, fi) {
+        if (String(f).indexOf("data:") === 0) pendientes.push({ pi: pi, fi: fi, data: f });
+      });
+    });
+
+    var n = 0;
+    function subirFotos() {
+      if (!pendientes.length) return Promise.resolve();
+      var item = pendientes.shift();
+      n++;
+      status("Subiendo foto " + n + " de " + (n + pendientes.length) + "…");
+      var head = item.data.slice(0, item.data.indexOf(","));
+      var ext = head.indexOf("webp") >= 0 ? "webp" : (head.indexOf("png") >= 0 ? "png" : "jpg");
+      var path = slug(S.productos[item.pi].nombre) + "-" + uid() + "." + ext;
+      return putFile(path, item.data.slice(item.data.indexOf(",") + 1), "Foto: " + path)
+        .then(function () { S.productos[item.pi].fotos[item.fi] = path; })
+        .then(subirFotos);
+    }
+
+    subirFotos()
+      .then(function () {
+        status("Publicando catálogo…");
+        S.actualizado = hoy();
+        var stampEl = document.querySelector("[data-stamp]");
+        if (stampEl) stampEl.textContent = S.actualizado;
+        return getSha("datos.json").then(function (sha) {
+          return putFile("datos.json", b64(JSON.stringify(S, null, 1)), "Actualizar catálogo", sha);
+        });
+      })
+      .then(function () {
+        dirty = false;
+        if (btn) btn.disabled = false;
+        dock();
+        status("Publicado. En un minuto se ve en el link.", "ok");
+      })
+      .catch(function (e) {
+        if (btn) btn.disabled = false;
+        dock();
+        status(explicar(e), "err");
+      });
+  }
+
+  function bajarDatos() {
+    var blob = new Blob([JSON.stringify(S, null, 1)], { type: "application/json" });
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "datos.json";
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 2000);
+  }
+
+  /* ---------------- fotos ---------------- */
+
+  var fileInput = document.createElement("input");
+  fileInput.type = "file"; fileInput.accept = "image/*"; fileInput.multiple = true;
+  fileInput.style.display = "none";
+  document.body.appendChild(fileInput);
+
+  var WEBP_OK = (function () {
+    try { var c = document.createElement("canvas"); c.width = c.height = 1;
+      return c.toDataURL("image/webp").indexOf("data:image/webp") === 0; } catch (e) { return false; }
+  })();
+
+  function shrink(file) {
+    return new Promise(function (res, rej) {
+      var fr = new FileReader();
+      fr.onerror = function () { rej(new Error("read")); };
+      fr.onload = function () {
+        var im = new Image();
+        im.onerror = function () { rej(new Error("decode")); };
+        im.onload = function () {
+          var MAX = 1400, w = im.width, hh = im.height;
+          if (w > MAX) { hh = Math.round(hh * MAX / w); w = MAX; }
+          var cv = document.createElement("canvas");
+          cv.width = w; cv.height = hh;
+          cv.getContext("2d").drawImage(im, 0, 0, w, hh);
+          res(cv.toDataURL(WEBP_OK ? "image/webp" : "image/jpeg", 0.75));
+        };
+        im.src = fr.result;
+      };
+      fr.readAsDataURL(file);
+    });
+  }
+
+  fileInput.addEventListener("change", function () {
+    var files = Array.prototype.slice.call(fileInput.files || []);
+    var i = photoTarget;
+    fileInput.value = "";
+    if (i == null || !files.length) return;
+    status("Procesando fotos…");
+    Promise.all(files.map(shrink)).then(function (urls) {
+      S.productos[i].fotos = S.productos[i].fotos.concat(urls);
+      touch(); render();
+    }).catch(function () { status("No se pudo leer una de las imágenes", "err"); });
+  });
+
+  /* ---------------- imprimir ---------------- */
+
+  function imprimir() {
+    var imgs = Array.prototype.slice.call(document.images);
+    imgs.forEach(function (im) { im.loading = "eager"; });
+    var espera = imgs.filter(function (im) { return !im.complete; })
+      .map(function (im) {
+        return new Promise(function (r) { im.addEventListener("load", r); im.addEventListener("error", r); });
+      });
+    Promise.all(espera).then(function () { setTimeout(function () { window.print(); }, 120); });
+  }
+
+  /* ---------------- eventos ---------------- */
+
+  document.addEventListener("input", function (e) {
+    var el = e.target;
+    if (!el || !el.dataset || !el.dataset.bind) return;
+    set(el.dataset.bind, el.textContent.replace(/\s+/g, " ").trim());
+    touch();
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") cerrarModal();
+    if (e.key === "Enter" && e.target && e.target.isContentEditable) { e.preventDefault(); e.target.blur(); }
+  });
+  document.addEventListener("paste", function (e) {
+    if (!e.target || !e.target.isContentEditable) return;
+    e.preventDefault();
+    var t = (e.clipboardData || window.clipboardData).getData("text/plain");
+    document.execCommand("insertText", false, t.replace(/\s+/g, " "));
+  });
+
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest("[data-act]");
+    if (!b) return;
+    var act = b.dataset.act;
+    var i = b.dataset.i != null ? +b.dataset.i : null;
+
+    if (act === "print") { imprimir(); return; }
+    if (act === "modal-close") { cerrarModal(); return; }
+    if (act === "config") { panelConfig(); return; }
+    if (act === "gh-probar") { probarConexion(); return; }
+    if (act === "bajar-datos") { bajarDatos(); return; }
+    if (act === "edit-on") { editing = true; dirty = false; render(); dock(); return; }
+    if (act === "edit-off") {
+      if (dirty && !window.confirm("Tenés cambios sin publicar. ¿Salir igual y perderlos?")) return;
+      editing = false;
+      if (dirty) { cargar(); dirty = false; return; }
+      render(); dock(); return;
+    }
+    if (act === "publicar") { publicar(); return; }
+
+    if (!editing) return;
+
+    if (act === "estado") { S.productos[i].estado = b.dataset.v; touch(); render(); return; }
+    if (act === "up" && i > 0) { swap(i, i - 1); return; }
+    if (act === "down" && i < S.productos.length - 1) { swap(i, i + 1); return; }
+    if (act === "dup") {
+      var copia = JSON.parse(JSON.stringify(S.productos[i]));
+      copia.id = "prod-" + uid();
+      copia.nombre = copia.nombre + " (copia)";
+      S.productos.splice(i + 1, 0, copia);
+      renumerar(); touch(); render(); return;
+    }
+    if (act === "del") {
+      if (!window.confirm('¿Eliminar "' + S.productos[i].nombre + '" del catálogo?')) return;
+      S.productos.splice(i, 1); renumerar(); touch(); render(); return;
+    }
+    if (act === "add-prod") {
+      S.productos.push(nuevoProducto()); touch(); render();
+      var arts = document.querySelectorAll(".prod");
+      if (arts.length) arts[arts.length - 1].scrollIntoView({ behavior: "smooth", block: "center" });
+      return;
+    }
+    if (act === "foto-add") { photoTarget = i; fileInput.click(); return; }
+    if (act === "foto-del") { S.productos[i].fotos.splice(+b.dataset.f, 1); touch(); render(); return; }
+    if (act === "foto-main") {
+      var f = +b.dataset.f;
+      S.productos[i].fotos.unshift(S.productos[i].fotos.splice(f, 1)[0]);
+      touch(); render(); return;
+    }
+    if (act === "var-add") { S.productos[i].variantes.push({ k: "M", v: "— × — cm", p: "$0" }); touch(); render(); return; }
+    if (act === "var-del") { S.productos[i].variantes.splice(+b.dataset.v, 1); touch(); render(); return; }
+    if (act === "spec-add") { S.productos[i].specs.push({ k: "Dato", v: "Valor" }); touch(); render(); return; }
+    if (act === "spec-del") { S.productos[i].specs.splice(+b.dataset.k, 1); touch(); render(); return; }
+  });
+
+  function swap(a, b2) {
+    var t = S.productos[a]; S.productos[a] = S.productos[b2]; S.productos[b2] = t;
+    renumerar(); touch(); render();
+  }
+  function renumerar() {
+    for (var i = 0; i < S.productos.length; i++) {
+      if (/^\d+$/.test(String(S.productos[i].codigo).trim()))
+        S.productos[i].codigo = String(i + 1).padStart(2, "0");
+    }
+  }
+  function nuevoProducto() {
+    return {
+      id: "prod-" + uid(),
+      codigo: String(S.productos.length + 1).padStart(2, "0"),
+      nombre: "Producto nuevo", tag: "Descripción corta",
+      precioLabel: "Precio", precio: "$0",
+      detalle: "Contá qué resuelve, cómo se usa y por qué está bien hecho.",
+      specs: [{ k: "Medidas", v: "— × — cm" }, { k: "Material", v: "Acero inoxidable" }],
+      variantes: [], fotos: [], estado: "disponible"
+    };
+  }
+
+  /* ---------------- arranque ---------------- */
+
+  function cargar() {
+    return fetch("datos.json?v=" + Date.now(), { cache: "no-store" })
+      .then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        return r.json();
+      })
+      .then(function (j) { S = j; render(); dock(); })
+      .catch(function () {
+        app.innerHTML =
+          '<div class="wrap" style="padding-top:64px;max-width:640px">' +
+          '<div class="mark" style="margin-bottom:28px">' + MARK_SVG + '<span class="word">MAKÖN</span></div>' +
+          '<h1 class="prod-h">No se pudo cargar el catálogo</h1>' +
+          '<p class="detalle">Falta el archivo <strong>datos.json</strong>, o estás abriendo el ' +
+          '<strong>index.html</strong> haciendo doble clic desde tu computadora. Los navegadores no dejan ' +
+          'leer archivos así por seguridad: abrilo desde el link publicado del sitio.</p></div>';
+      });
+  }
+
+  cargar();
+})();
+
+</script>
+</body>
+</html>
