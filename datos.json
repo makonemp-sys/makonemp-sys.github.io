@@ -38,38 +38,8 @@
    "estado": "disponible"
   },
   {
-   "id": "tabla-parrillera",
-   "codigo": "02",
-   "nombre": "Tabla parrillera",
-   "tag": "Tabla grande con plegado para sujetarla a la mesada",
-   "precioLabel": "Precio",
-   "precio": "$51.500",
-   "detalle": "El formato grande ideal para el asado y la cocina diaria: amplia superficie de corte con sujeción firme al borde de la mesada.",
-   "specs": [
-    {
-     "k": "Medidas",
-     "v": "60 × 30 cm"
-    },
-    {
-     "k": "Alto del plegado",
-     "v": "25 mm"
-    },
-    {
-     "k": "Material",
-     "v": "Acero inoxidable"
-    }
-   ],
-   "variantes": [],
-   "fotos": [
-    "tabla-parrillera.webp",
-    "tabla-parrillera-2.webp",
-    "tabla-parrillera-3.webp"
-   ],
-   "estado": "disponible"
-  },
-  {
    "id": "set-tablas",
-   "codigo": "03",
+   "codigo": "02",
    "nombre": "Set de tablas",
    "tag": "Para carne, vegetales y pan, con soporte apilable grabado a láser",
    "precioLabel": "Desde",
@@ -103,7 +73,7 @@
   },
   {
    "id": "prod-mtm04i3syni1",
-   "codigo": "04",
+   "codigo": "03",
    "nombre": "Combo de espatulas",
    "tag": "Descripción corta",
    "precioLabel": "Precio",
