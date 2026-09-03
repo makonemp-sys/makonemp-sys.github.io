@@ -1,6 +1,6 @@
 {
  "anio": "2026",
- "actualizado": "31 de agosto de 2026",
+ "actualizado": "3 de septiembre de 2026",
  "portada": {
   "titulo": "Catálogo de productos",
   "bajada": "Tablas de acero inoxidable de fabricación propia.",
@@ -98,6 +98,38 @@
     "set-tablas-2.webp",
     "set-tablas-3.webp",
     "set-tablas-4.webp"
+   ],
+   "estado": "disponible"
+  },
+  {
+   "id": "prod-mtm04i3syni1",
+   "codigo": "04",
+   "nombre": "Combo de espatulas",
+   "tag": "Descripción corta",
+   "precioLabel": "Precio",
+   "precio": "$15.000",
+   "detalle": "Contá qué resuelve, cómoDos espátulas que hacen todo el trabajo de la plancha: la cuadrada levanta, da vuelta y raspa; la pizzera entra bajo la masa sin romperla. Acero inoxidable de una sola pieza, sin mango que se afloje ni tornillo que junte grasa. Se lavan y se cuelgan. se usa y por qué está bien hecho.",
+   "specs": [
+    {
+     "k": "cuadrada",
+     "v": "9x9cm"
+    },
+    {
+     "k": "Material",
+     "v": "Acero inoxidable 304"
+    }
+   ],
+   "variantes": [
+    {
+     "k": "Pizzera",
+     "v": "12x10cm",
+     "p": ""
+    }
+   ],
+   "fotos": [
+    "combo-de-espatulas-mtm1e3vu1glf.webp",
+    "combo-de-espatulas-mtm1e5k9i3w4.webp",
+    "combo-de-espatulas-mtm1e6fof1pt.webp"
    ],
    "estado": "disponible"
   }
