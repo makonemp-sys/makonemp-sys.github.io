@@ -13,7 +13,7 @@
    "nombre": "Tabla de acero inoxidable",
    "tag": "Con plegado para sujetarla a la mesada",
    "precioLabel": "Precio",
-   "precio": "$41.500",
+   "precio": "$40.000",
    "detalle": "Superficie de corte y apoyo que se integra a la mesada: el plegado frontal la sujeta firme al borde, sin moverse durante el uso.",
    "specs": [
     {
@@ -40,7 +40,7 @@
   {
    "id": "prod-mu0dn0wp4u5q",
    "codigo": "02",
-   "nombre": "Tabla Parilleraa",
+   "nombre": "Tabla Parillera",
    "tag": "Formato grande con plegado, para el asado y el uso diario",
    "precioLabel": "Precio",
    "precio": "$52.000",
