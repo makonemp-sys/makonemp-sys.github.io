@@ -1,6 +1,6 @@
 {
  "anio": "2026",
- "actualizado": "3 de septiembre de 2026",
+ "actualizado": "13 de septiembre de 2026",
  "portada": {
   "titulo": "Catálogo de productos",
   "bajada": "Tablas de acero inoxidable de fabricación propia.",
@@ -38,8 +38,34 @@
    "estado": "disponible"
   },
   {
-   "id": "set-tablas",
+   "id": "prod-mu0dn0wp4u5q",
    "codigo": "02",
+   "nombre": "Tabla Parilleraa",
+   "tag": "Formato grande con plegado, para el asado y el uso diario",
+   "precioLabel": "Precio",
+   "precio": "$52.000",
+   "detalle": "Superficie amplia de corte en acero inoxidable, con plegado frontal de 25 mm que la sujeta firme al borde de la mesada. El formato grande para trabajar el asado, la verdura y el pan sin quedarte sin lugar.",
+   "specs": [
+    {
+     "k": "Medidas",
+     "v": "30x60cm"
+    },
+    {
+     "k": "Material",
+     "v": "Acero inoxidable 304"
+    }
+   ],
+   "variantes": [],
+   "fotos": [
+    "tabla-parilleraa-mu0drnz644zc.webp",
+    "tabla-parilleraa-mu0drpdqe6t3.webp",
+    "tabla-parilleraa-mu0drqnk09uf.webp"
+   ],
+   "estado": "disponible"
+  },
+  {
+   "id": "set-tablas",
+   "codigo": "03",
    "nombre": "Set de tablas",
    "tag": "Para carne, vegetales y pan, con soporte apilable grabado a láser",
    "precioLabel": "Desde",
@@ -73,7 +99,7 @@
   },
   {
    "id": "prod-mtm04i3syni1",
-   "codigo": "03",
+   "codigo": "04",
    "nombre": "Combo de espatulas",
    "tag": "Descripción corta",
    "precioLabel": "Precio",
